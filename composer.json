@@ -1,0 +1,33 @@
+{
+    "name": "firebender/laravel-dumper",
+    "description": "Dumper for Laravel projects",
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "Jay Arabia",
+            "email": "firebender.me@gmail.com"
+        }
+    ],
+    "require": {
+        "lorisleiva/laravel-actions": "^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.4"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "FireBender\\Laravel\\Dumper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FireBender\\Laravel\\Dumper\\Tests\\": "tests/"
+        }
+    },    
+    "config": {
+        "sort-packages": true
+    }
+}
