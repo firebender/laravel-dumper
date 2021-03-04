@@ -1,7 +1,7 @@
 {
     "name": "firebender/laravel-dumper",
     "description": "Dumper for Laravel projects",
-    "license": "Proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jay Arabia",
