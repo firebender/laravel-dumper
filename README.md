@@ -8,9 +8,7 @@ Coder tool for dumping out objects to show parents, interfaces, traits, properti
 
 ### How do I get set up? ###
 
-    ```
     composer require --dev firebender/laravel-dumper
-    ```
 
 ### Contribution guidelines ###
 
