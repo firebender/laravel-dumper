@@ -26,16 +26,6 @@ if (!function_exists('dump_defined_functions')) {
 /**
  * 
  */
-if (!function_exists('dumper')) {
-	function dumper()
-	{
-		return \FireBender\Laravel\Dumper\Dumper::getInstance();
-	}
-}
-
-/**
- * 
- */
 if (function_exists('d')) {
 	throw new \Exception('Cannot call dumper. Function d() exists');
 } else {
