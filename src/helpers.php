@@ -43,3 +43,16 @@ if (function_exists('d')) {
 		return \FireBender\Laravel\Dumper\Dumper::getInstance(...$args);
 	}
 }
+
+/**
+ * 
+ */
+if (function_exists('eb')) {
+	throw new \Exception('Cannot call dumper. Function eb() exists');
+} else {
+	function eb($s, $html = false) {
+		$line = $s . PHP_EOL;
+		if ($html) $line = nl2br($line);
+		echo $line;
+	}
+}
