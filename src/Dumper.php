@@ -182,7 +182,7 @@ class Dumper
 							}
 
 							$defaultValue = $param->getDefaultValue();
-							$dumped = $this->getDump($defaultValue);
+							$dumped = self::getDump($defaultValue);
 							$entry .= ' = ' . $dumped;
 						}
 
