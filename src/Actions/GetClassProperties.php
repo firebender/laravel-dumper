@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace FireBender\Laravel\Dumper\Actions;
 
-use Lorisleiva\Actions\Concerns\AsAction;
+use FireBender\Laravel\Dumper\Actions\Concerns\AsObject;
 use FireBender\Laravel\Dumper\Dumper;
 use ReflectionClass;
 
 class GetClassProperties
 {
-    use AsAction;
+    use AsObject;
 
     public function handle(Object $object)
     {

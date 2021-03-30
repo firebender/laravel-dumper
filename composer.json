@@ -7,9 +7,6 @@
             "name": "Jay Arabia"
         }
     ],
-    "require": {
-        "lorisleiva/laravel-actions": "^2.0"
-    },
     "require-dev": {
         "orchestra/testbench": "^6.4"
     },

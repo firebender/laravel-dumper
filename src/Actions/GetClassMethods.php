@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace FireBender\Laravel\Dumper\Actions;
 
-use Lorisleiva\Actions\Concerns\AsAction;
+use FireBender\Laravel\Dumper\Actions\Concerns\AsObject;
 use FireBender\Laravel\Dumper\Dumper;
 use Reflection, ReflectionClass, ReflectionMethod;
 use Illuminate\Support\Arr;
 
 class GetClassMethods
 {
-    use AsAction;
+    use AsObject;
 
     /**
      * 
