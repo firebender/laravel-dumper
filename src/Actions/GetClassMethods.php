@@ -81,7 +81,12 @@ class GetClassMethods
             {
                 $type = $parameter->getType();
 
-                $tmp[] = $type->getName();
+                if (method_exists($type, 'getName')) {
+                    $tmp[] = $type->getName();
+                } elseif (property_exists($type, 'name')) {
+                    $tmp[] = $type->name;
+                }
+
             }
 
             $name = $parameter->getName();
