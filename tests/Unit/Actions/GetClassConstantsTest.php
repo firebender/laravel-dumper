@@ -19,9 +19,9 @@ class GetClassConstantsTest extends TestCase
     public function can_get_class_constants()
     {
         $expected = [
-            'ONE' => 1,
-            'TWO' => 2,
-            'THREE' => 3,
+            'ONE => 1',
+            'THREE => 3',
+            'TWO => 2'
         ];
 
         $object = new ClassD();

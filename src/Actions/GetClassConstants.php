@@ -19,8 +19,14 @@ class GetClassConstants
         $class = new ReflectionClass($object);
 
         $constants = $class->getConstants();
+        ksort($constants);
 
-        return $constants;
+        $display = [];
+        foreach ($constants as $key => $value) {
+            $display[] = "$key => $value";
+        }
+
+        return $display;
     }
 
 

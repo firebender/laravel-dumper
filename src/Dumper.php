@@ -92,12 +92,14 @@ class Dumper
 	 */
 	protected function constants(Object $object)
 	{
-		$traits = GetClassConstants::run($object);
+		$constants = GetClassConstants::run($object);
 
 		$this->return[] = 'Constants';
 		$this->return[] = '';
-		$this->return = array_merge($this->return, array_values($traits));
+		$this->return = array_merge($this->return, array_values($constants));
 		$this->return[] = '';
+
+
 	}
 
 	/**
