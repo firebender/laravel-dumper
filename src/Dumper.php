@@ -7,6 +7,7 @@ namespace FireBender\Laravel\Dumper;
 use FireBender\Laravel\Dumper\Actions\GetClassParents;
 use FireBender\Laravel\Dumper\Actions\GetClassInterfaces;
 use FireBender\Laravel\Dumper\Actions\GetClassTraits;
+use FireBender\Laravel\Dumper\Actions\GetClassConstants;
 use FireBender\Laravel\Dumper\Actions\GetClassProperties;
 use FireBender\Laravel\Dumper\Actions\GetClassMethods;
 
@@ -40,6 +41,7 @@ class Dumper
 		$this->parents($object);
 		$this->interfaces($object);
 		$this->traits($object);
+		$this->constants($object);
 		$this->properties($object);
 		$this->methods($object);
 
@@ -80,6 +82,19 @@ class Dumper
 		$traits = GetClassTraits::run($object);
 
 		$this->return[] = 'Traits';
+		$this->return[] = '';
+		$this->return = array_merge($this->return, array_values($traits));
+		$this->return[] = '';
+	}
+
+	/**
+	 * 
+	 */
+	protected function constants(Object $object)
+	{
+		$traits = GetClassConstants::run($object);
+
+		$this->return[] = 'Constants';
 		$this->return[] = '';
 		$this->return = array_merge($this->return, array_values($traits));
 		$this->return[] = '';
