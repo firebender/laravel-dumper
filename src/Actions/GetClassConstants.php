@@ -22,7 +22,7 @@ class GetClassConstants
         ksort($constants);
 
         $display = [];
-        foreach ($constants as $key => $value) {
+        foreach ($constants as $key => $entry) {
             if (is_array($entry)) {
                 $s = "[" . PHP_EOL;
                 foreach ($entry as $k => $v) {
@@ -31,7 +31,7 @@ class GetClassConstants
                 $s .= "]" . PHP_EOL;
                 $entry = $s;
             }            
-            $display[] = "$key => $value";
+            $display[] = "$key => $entry";
         }
 
         return $display;
