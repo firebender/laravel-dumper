@@ -23,6 +23,14 @@ class GetClassConstants
 
         $display = [];
         foreach ($constants as $key => $value) {
+            if (is_array($entry)) {
+                $s = "[" . PHP_EOL;
+                foreach ($entry as $k => $v) {
+                    $s .= "$k => $v" . PHP_EOL;
+                }
+                $s .= "]" . PHP_EOL;
+                $entry = $s;
+            }            
             $display[] = "$key => $value";
         }
 
