@@ -2,7 +2,7 @@
 
 Laravel Dumper package
 
-![Zuko](docs/assets/zuko.jpeg.jpeg?raw=true "Zuko the FireBender")
+![Zuko](docs/assets/zuko.jpeg?raw=true "Zuko the FireBender")
 
 ### What is this repository for? ###
 
