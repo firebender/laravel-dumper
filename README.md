@@ -2,7 +2,7 @@
 
 Laravel Dumper package
 
-![Zuko]<img src="docs/assets/zuko.jpeg" width="300">
+<img src="docs/assets/zuko.jpeg" width="300">
 
 ### What is this repository for? ###
 
