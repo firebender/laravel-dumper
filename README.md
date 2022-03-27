@@ -4,6 +4,8 @@ Laravel Dumper package
 
 <img src="docs/assets/zuko.jpeg" width="300">
 
+[Who is Zuko?](docs/zuko.md)
+
 ### What is this repository for? ###
 
 Coder tool for dumping out objects to show parents, interfaces, traits, properties and methods
