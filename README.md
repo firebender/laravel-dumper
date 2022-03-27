@@ -2,6 +2,8 @@
 
 Laravel Dumper package
 
+![Zuko](docs/assets/zuko.jpeg.jpeg?raw=true "Zuko the FireBender")
+
 ### What is this repository for? ###
 
 Coder tool for dumping out objects to show parents, interfaces, traits, properties and methods
